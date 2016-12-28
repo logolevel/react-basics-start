@@ -37,5 +37,11 @@ function App(props) {
 	);
 }
 
+App.propTypes = {
+	title: React.PropTypes.string
+};
 
-ReactDOM.render(<App title="React Todo" />, document.getElementById('root'));
+App.defaultProps = {
+	title: 'React Todo'
+}
+ReactDOM.render(<App />, document.getElementById('root'));
